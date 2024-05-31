@@ -286,10 +286,7 @@
         </div>
 
         <div class="contactForm">
-          <form
-            action="https://formsubmit.co/omar_nur123@hotmail.com"
-            method="POST"
-          >
+          <form action="POST" data-netlify="true">
             <h2>Har du spørsmål? Gi oss beskjed, så tar vi kontakt!</h2>
             <div class="inputBox">
               <input type="navn" name="navn" required="required" />
@@ -298,7 +295,7 @@
             <input
               type="hidden"
               name="_next"
-              value="https://www.websynlig.no/thanks.html"
+              value=""
             />
 
             <div class="inputBox">
@@ -309,6 +306,15 @@
               <input type="telefon" name="telefon" required="required" />
               <span>Telefon</span>
             </div>
+            <div class="field">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            <form
+              name="contact"
+              action="/thanks.html"
+              method="POST"
+              data-netlify="true"
+            ></form>
             <div class="inputBox">
               <select required="required">
                 <option value="" disabled selected>
